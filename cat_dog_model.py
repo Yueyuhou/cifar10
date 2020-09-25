@@ -36,6 +36,7 @@ history = model.fit_generator(train_generator, steps_per_epoch=train_data_img.sh
                               validation_data=test_generator, validation_steps=test_data_img.shape[0]/batch_size)
 
 model.save('cifar10_model_1.h5')
+
 show_result.show_result(history.history)
 
 

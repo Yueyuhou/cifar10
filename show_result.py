@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 
 def show_result(history):
-    acc = history['acc']
-    val_acc = history['val_acc']
+    acc = history['accuracy']
+    val_acc = history['val_accuracy']
     loss = history['loss']
     val_loss = history['val_loss']
 
