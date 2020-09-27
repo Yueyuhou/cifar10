@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
+
 class Model_1():
     def __init__(self, input_shape, num_classes):
         self.input_shape = input_shape
@@ -28,10 +29,3 @@ class Model_1():
 
         model = keras.Model(inputs=inputs, outputs=outputs, name='model_1')
         return model
-
-
-
-
-
-
-
