@@ -3,7 +3,7 @@ import json
 config = {
   "config_par":
   {
-    "path":"G:\\DeepLearningPractise\\keras_get_started\\oldCode\\cifar-10-python\\cifar-10-batches-py",
+    "path": "../cifar_data",
     "num_class" : 10,
     "batch_size" : 100,
     "epoch_num" : 100,
@@ -16,8 +16,8 @@ config = {
     "decay" : 1e-6,
     "horizontal_flip" : True,
     "data_augment" : False,
-    "check_point_path" : ".\\check_point\\weights_{epoch:02d}-{val_loss:.2f}.hdf5",
-    "my_log_file" : ".\\cat_dog\\log_file"
+    "check_point_path" : "./check_point/weights_{epoch:02d}-{val_loss:.2f}.hdf5",
+    "my_log_file" : "../log_file"
   }
 
 }

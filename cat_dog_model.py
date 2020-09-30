@@ -63,7 +63,7 @@ model.compile(loss='categorical_crossentropy',
               optimizer=tf.keras.optimizers.RMSprop(lr=lr, decay=decay),
               metrics=['accuracy'])
 
-callbacks = [tf.keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0.0001, patience=5, mode='min',
+callbacks = [tf.keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0.00001, patience=5, mode='min',
                                               restore_best_weights=True),
              tf.keras.callbacks.ModelCheckpoint(check_point_path, monitor='val_loss', mode='min', save_best_only=True,
                                                 save_freq='epoch'),
